@@ -5,8 +5,8 @@ import os
 app = Flask(__name__)
 
 CLOUDINARY_BASE = "https://res.cloudinary.com/djk42jm3p/image/upload/"
-CLOUDINARY_HERO = "https://res.cloudinary.com/djk42jm3p/image/upload/static/hero"
-CLOUDINARY_LOGO = "https://res.cloudinary.com/djk42jm3p/image/upload/static/logo"
+CLOUDINARY_HERO = "https://res.cloudinary.com/djk42jm3p/image/upload/v1781112319/hero.png"
+CLOUDINARY_LOGO = "https://res.cloudinary.com/djk42jm3p/image/upload/v1781112317/logo.png"
 
 def load_properties():
     path = os.path.join(os.path.dirname(__file__), "properties.json")

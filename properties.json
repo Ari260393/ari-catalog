@@ -1,0 +1,147 @@
+[
+  {
+    "title": "דירת גן 5 חדרים",
+    "rooms": "5",
+    "sqm": "125",
+    "outdoor_type": "חצר",
+    "balcony": "180",
+    "price": "5,200,000",
+    "images": [
+      "images/dira1/2.jpeg",
+      "images/dira1/3.jpeg",
+      "images/dira1/4.jpeg",
+      "images/dira1/5.jpeg",
+      "images/dira1/6.jpeg",
+      "images/dira1/7.jpeg",
+      "images/dira1/8.jpeg",
+      "images/dira1/9.jpeg",
+      "images/dira1/10.jpeg"
+    ]
+  },
+  {
+    "title": "דירת 5 חדרים",
+    "rooms": "5",
+    "sqm": "125",
+    "outdoor_type": "מרפסת",
+    "balcony": "18",
+    "price": "3,250,000",
+    "images": ["hero.png", "hero.png"]
+  },
+  {
+    "title": "דירת גן",
+    "rooms": "5",
+    "sqm": "130",
+    "outdoor_type": "חצר",
+    "balcony": "70",
+    "price": "3,490,000",
+    "images": ["hero.png", "hero.png", "hero.png"]
+  },
+  {
+    "title": "דירת 4 חדרים",
+    "rooms": "4",
+    "sqm": "112",
+    "outdoor_type": "מרפסת",
+    "balcony": "16",
+    "price": "2,650,000",
+    "images": ["hero.png", "hero.png"]
+  },
+  {
+    "title": "דירת 4 חדרים",
+    "rooms": "4",
+    "sqm": "108",
+    "outdoor_type": "מרפסת",
+    "balcony": "14",
+    "price": "2,490,000",
+    "images": ["hero.png"]
+  },
+  {
+    "title": "דופלקס גג",
+    "rooms": "6",
+    "sqm": "145",
+    "outdoor_type": "גג",
+    "balcony": "60",
+    "price": "4,200,000",
+    "images": ["hero.png", "hero.png", "hero.png"]
+  },
+  {
+    "title": "דירת 5 חדרים",
+    "rooms": "5",
+    "sqm": "120",
+    "outdoor_type": "מרפסת",
+    "balcony": "20",
+    "price": "2,990,000",
+    "images": ["hero.png", "hero.png"]
+  },
+  {
+    "title": "דירת גן",
+    "rooms": "5",
+    "sqm": "128",
+    "outdoor_type": "חצר",
+    "balcony": "80",
+    "price": "3,390,000",
+    "images": ["hero.png", "hero.png"]
+  },
+  {
+    "title": "דירת 4 חדרים",
+    "rooms": "4",
+    "sqm": "110",
+    "outdoor_type": "מרפסת",
+    "balcony": "15",
+    "price": "2,390,000",
+    "images": ["hero.png"]
+  },
+  {
+    "title": "פנטהאוז",
+    "rooms": "6",
+    "sqm": "170",
+    "outdoor_type": "מרפסת",
+    "balcony": "100",
+    "price": "5,300,000",
+    "images": ["hero.png", "hero.png", "hero.png"]
+  },
+  {
+    "title": "דירת 3 חדרים",
+    "rooms": "3",
+    "sqm": "83",
+    "outdoor_type": "מרפסת",
+    "balcony": "14",
+    "price": "2,550,000",
+    "images": ["hero.png", "hero.png"]
+  },
+  {
+    "title": "דירת 4 חדרים",
+    "rooms": "4",
+    "sqm": "105",
+    "outdoor_type": "מרפסת",
+    "balcony": "12",
+    "price": "2,850,000",
+    "images": ["hero.png"]
+  },
+  {
+    "title": "דירת 5 חדרים",
+    "rooms": "5",
+    "sqm": "118",
+    "outdoor_type": "מרפסת",
+    "balcony": "20",
+    "price": "3,100,000",
+    "images": ["hero.png", "hero.png"]
+  },
+  {
+    "title": "מיני פנטהאוז",
+    "rooms": "5",
+    "sqm": "140",
+    "outdoor_type": "מרפסת",
+    "balcony": "35",
+    "price": "3,750,000",
+    "images": ["hero.png", "hero.png", "hero.png"]
+  },
+  {
+    "title": "דירת גן מיוחדת",
+    "rooms": "4",
+    "sqm": "115",
+    "outdoor_type": "חצר",
+    "balcony": "75",
+    "price": "3,200,000",
+    "images": ["hero.png", "hero.png"]
+  }
+]

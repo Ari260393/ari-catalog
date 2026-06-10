@@ -7,15 +7,16 @@
     "balcony": "180",
     "price": "5,200,000",
     "images": [
-      "images/dira1/2.jpeg",
-      "images/dira1/3.jpeg",
-      "images/dira1/4.jpeg",
-      "images/dira1/5.jpeg",
-      "images/dira1/6.jpeg",
-      "images/dira1/7.jpeg",
-      "images/dira1/8.jpeg",
-      "images/dira1/9.jpeg",
-      "images/dira1/10.jpeg"
+    "static/dira1/1",
+    "static/dira1/2",
+    "static/dira1/3",
+    "static/dira1/4",
+    "static/dira1/5",
+    "static/dira1/6",
+    "static/dira1/7",
+    "static/dira1/8",
+    "static/dira1/9",
+    "static/dira1/10"
     ]
   },
   {

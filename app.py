@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 
 CLOUDINARY_BASE = "https://res.cloudinary.com/djk42jm3p/image/upload/"
-CLOUDINARY_HERO = "https://res.cloudinary.com/djk42jm3p/image/upload/static/hero_irbnja.png"
+CLOUDINARY_HERO = "https://res.cloudinary.com/djk42jm3p/image/upload/static/hero"
 CLOUDINARY_LOGO = "https://res.cloudinary.com/djk42jm3p/image/upload/static/logo"
 
 def load_properties():

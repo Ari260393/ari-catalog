@@ -2,7 +2,7 @@ from flask import Flask
 import json
 import os
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static', static_url_path='/static')
 
 CLOUDINARY_BASE = "https://res.cloudinary.com/djk42jm3p/image/upload/"
 CLOUDINARY_HERO = "https://res.cloudinary.com/djk42jm3p/image/upload/v1781112319/hero.png"

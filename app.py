@@ -8,7 +8,7 @@ CLOUD = "djk42jm3p"
 BASE  = f"https://res.cloudinary.com/{CLOUD}/image/upload"
 
 CLOUDINARY_HERO = f"{BASE}/hero.png"
-CLOUDINARY_LOGO = f"{BASE}/logo.png"
+CLOUDINARY_LOGO = f"{BASE}/logo.png?v=2"
 
 def load_properties():
    path = os.path.join(os.path.dirname(__file__), "properties.json")

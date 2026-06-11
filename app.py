@@ -395,6 +395,57 @@ h1 span {{
 .lb-arrow-r {{ right: 20px; }}
 .lb-arrow-l {{ left: 20px; }}
 
+.filter-bar {{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+   padding: 20px 0 10px;
+}}
+
+.filter-label {{
+   font-size: 13px;
+   font-weight: 700;
+   color: #888;
+   font-family: 'Heebo', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}}
+
+.filter-pills {{
+   display: flex;
+   gap: 0;
+   border: 1.5px solid #b89445;
+   border-radius: 25px;
+   overflow: hidden;
+   background: white;
+}}
+
+.filter-btn {{
+   background: white;
+   border: none;
+   border-left: 1px solid #b89445;
+   padding: 8px 22px;
+   font-size: 15px;
+   font-weight: 700;
+   color: #073d2c;
+   cursor: pointer;
+   font-family: 'Heebo', sans-serif;
+   transition: background .15s, color .15s;
+   min-width: 52px;
+}}
+
+.filter-btn:last-child {{ border-left: none; }}
+
+.filter-btn:hover {{
+   background: #f0e8d0;
+}}
+
+.filter-btn.active {{
+   background: #b89445;
+   color: white;
+}}
+
 @media (max-width: 900px) {{
    .grid {{ grid-template-columns: repeat(2, 1fr); }}
 }}
@@ -463,12 +514,14 @@ h1 span {{
 <div class="section-line"></div>
 
 <div class="filter-bar">
-   <span class="filter-label">סינון לפי חדרים:</span>
-   <button class="filter-btn active" onclick="filterRooms('all')">הכל</button>
-   <button class="filter-btn" onclick="filterRooms('3')">3</button>
-   <button class="filter-btn" onclick="filterRooms('4')">4</button>
-   <button class="filter-btn" onclick="filterRooms('5')">5</button>
-   <button class="filter-btn" onclick="filterRooms('6')">6</button>
+   <span class="filter-label">חדרים</span>
+   <div class="filter-pills">
+       <button class="filter-btn active" data-rooms="all">הכל</button>
+       <button class="filter-btn" data-rooms="3">3</button>
+       <button class="filter-btn" data-rooms="4">4</button>
+       <button class="filter-btn" data-rooms="5">5</button>
+       <button class="filter-btn" data-rooms="6">6</button>
+   </div>
 </div>
 
 <section class="grid">
@@ -551,6 +604,25 @@ function closeLightbox() {{
    document.getElementById('lightbox').classList.remove('open');
    document.body.style.overflow = '';
 }}
+
+function filterRooms(rooms) {{
+   document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+   document.querySelectorAll('.card').forEach(card => {{
+       if (rooms === 'all' || card.dataset.rooms === rooms) {{
+           card.style.display = '';
+       }} else {{
+           card.style.display = 'none';
+       }}
+   }});
+}}
+
+document.querySelectorAll('.filter-btn').forEach(btn => {{
+   btn.addEventListener('click', function() {{
+       document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+       this.classList.add('active');
+       filterRooms(this.dataset.rooms);
+   }});
+}});
 
 document.addEventListener('keydown', e => {{
    if (!document.getElementById('lightbox').classList.contains('open')) return;

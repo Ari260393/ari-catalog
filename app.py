@@ -7,8 +7,8 @@ app = Flask(__name__)
 CLOUD = "djk42jm3p"
 BASE  = f"https://res.cloudinary.com/{CLOUD}/image/upload"
 
-CLOUDINARY_HERO = f"{BASE}/hero.png"
-CLOUDINARY_LOGO = f"{BASE}/logo.png"
+CLOUDINARY_HERO = f"{BASE}/static/hero"
+CLOUDINARY_LOGO = f"{BASE}/static/logo"
 
 def load_properties():
    path = os.path.join(os.path.dirname(__file__), "properties.json")
@@ -45,7 +45,7 @@ def home():
            """
 
        cards += f"""
-       <div class="card">
+       <div class="card" data-rooms="{p['rooms']}">
            <div class="carousel" id="carousel-{idx}">
                {slides}
                {arrows}
@@ -461,6 +461,15 @@ h1 span {{
 
 <div class="section-title">נכסים זמינים</div>
 <div class="section-line"></div>
+
+<div class="filter-bar">
+   <span class="filter-label">סינון לפי חדרים:</span>
+   <button class="filter-btn active" onclick="filterRooms('all')">הכל</button>
+   <button class="filter-btn" onclick="filterRooms('3')">3</button>
+   <button class="filter-btn" onclick="filterRooms('4')">4</button>
+   <button class="filter-btn" onclick="filterRooms('5')">5</button>
+   <button class="filter-btn" onclick="filterRooms('6')">6</button>
+</div>
 
 <section class="grid">
    {cards}

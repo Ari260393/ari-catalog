@@ -99,9 +99,9 @@ body {{
 .logo-wrap {{
    width: 620px;
    max-width: 78vw;
-   overflow: hidden;
+   overflow: visible;
    line-height: 0;
-   margin-bottom: 0;
+   margin-bottom: 8px;
    background: transparent;
 }}
 
@@ -110,7 +110,6 @@ body {{
    display: block;
    mix-blend-mode: screen;
    filter: brightness(1.4) contrast(1.1);
-   margin-bottom: -18%;
    background: transparent;
 }}
 
@@ -410,7 +409,6 @@ h1 span {{
    font-weight: 700;
    color: #888;
    font-family: 'Heebo', sans-serif;
-   text-transform: uppercase;
    letter-spacing: 1px;
 }}
 
@@ -455,7 +453,7 @@ h1 span {{
 
 @media (max-width: 600px) {{
    .hero {{ padding: 28px 16px 26px; }}
-   .logo-wrap {{ width: 280px; }}
+   .logo-wrap {{ width: 90vw; }}
    h1 {{ font-size: 32px; }}
    .subtitle {{ font-size: 15px; }}
 

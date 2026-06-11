@@ -102,14 +102,16 @@ body {{
    overflow: hidden;
    line-height: 0;
    margin-bottom: 0;
+   background: transparent;
 }}
 
 .logo-wrap img {{
    width: 100%;
    display: block;
    mix-blend-mode: screen;
-   filter: brightness(1.2) contrast(1.05);
+   filter: brightness(1.4) contrast(1.1);
    margin-bottom: -18%;
+   background: transparent;
 }}
 
 .line {{
@@ -415,30 +417,31 @@ h1 span {{
 .filter-pills {{
    display: flex;
    gap: 0;
-   border: 1.5px solid #b89445;
-   border-radius: 25px;
+   border: 2px solid #b89445;
+   border-radius: 30px;
    overflow: hidden;
    background: white;
+   box-shadow: 0 2px 8px rgba(0,0,0,.07);
 }}
 
 .filter-btn {{
    background: white;
    border: none;
-   border-left: 1px solid #b89445;
-   padding: 8px 22px;
-   font-size: 15px;
-   font-weight: 700;
+   border-left: 1.5px solid #b89445;
+   padding: 12px 28px;
+   font-size: 17px;
+   font-weight: 800;
    color: #073d2c;
    cursor: pointer;
    font-family: 'Heebo', sans-serif;
    transition: background .15s, color .15s;
-   min-width: 52px;
+   min-width: 64px;
 }}
 
 .filter-btn:last-child {{ border-left: none; }}
 
 .filter-btn:hover {{
-   background: #f0e8d0;
+   background: #f7f0de;
 }}
 
 .filter-btn.active {{

@@ -126,7 +126,7 @@
       "עדות 1",
       "עדות 2"
     ],
-    "images": [    
+    "images": [
       "https://res.cloudinary.com/djk42jm3p/image/upload/4.1.jpg",
       "https://res.cloudinary.com/djk42jm3p/image/upload/4.2.jpg",
       "https://res.cloudinary.com/djk42jm3p/image/upload/4.3.jpg",
@@ -158,7 +158,7 @@
       "עדות 1",
       "עדות 2"
     ],
-    "images": [     
+    "images": [
       "https://res.cloudinary.com/djk42jm3p/image/upload/5.1.jpg",
       "https://res.cloudinary.com/djk42jm3p/image/upload/5.2.jpg",
       "https://res.cloudinary.com/djk42jm3p/image/upload/5.3.jpg",
@@ -330,6 +330,107 @@
       "https://res.cloudinary.com/djk42jm3p/image/upload/10.4.jpg",
       "https://res.cloudinary.com/djk42jm3p/image/upload/10.5.jpg",
       "https://res.cloudinary.com/djk42jm3p/image/upload/10.6.jpg"
+    ]
+  },
+  {
+    "title": "דירת 4.5 חדרים",
+    "rooms": "4",
+    "sqm": "110",
+    "outdoor_type": "מרפסת",
+    "balcony": "14",
+    "price": "3,190,000",
+    "address": "📍 שכונת מורשת המבוקשת | חיים הרצוג",
+    "subtitle": "תוסיפי תיאור קצר של הבניין",
+    "description": "תוסיפי תיאור חם של הדירה",
+    "features": [
+      "תכונה 1",
+      "תכונה 2",
+      "תכונה 3",
+      "תכונה 4",
+      "תכונה 5"
+    ],
+    "location": "תוסיפי קרבה ומיקום",
+    "highlights": [
+      "עדות 1",
+      "עדות 2"
+    ],
+    "images": [
+      "https://res.cloudinary.com/djk42jm3p/image/upload/11.1.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/11.2.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/11.3.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/11.4.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/11.5.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/11.6.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/11.7.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/11.8.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/11.9.jpg"
+    ]
+  },
+  {
+    "title": "דירת 4 חדרים",
+    "rooms": "4",
+    "sqm": "110",
+    "outdoor_type": "מרפסת",
+    "balcony": "20",
+    "price": "3,090,000",
+    "address": "📍 שכונת מורשת המבוקשת | גולדה מאיר",
+    "subtitle": "תוסיפי תיאור קצר של הבניין",
+    "description": "תוסיפי תיאור חם של הדירה",
+    "features": [
+      "תכונה 1",
+      "תכונה 2",
+      "תכונה 3",
+      "תכונה 4",
+      "תכונה 5"
+    ],
+    "location": "תוסיפי קרבה ומיקום",
+    "highlights": [
+      "עדות 1",
+      "עדות 2"
+    ],
+    "images": [
+      "https://res.cloudinary.com/djk42jm3p/image/upload/12.1.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/12.2.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/12.3.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/12.4.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/12.5.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/12.6.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/12.7.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/12.8.jpg"
+    ]
+  },
+  {
+    "title": "דירת גן 6 חדרים",
+    "rooms": "6",
+    "sqm": "138",
+    "outdoor_type": "חצר",
+    "balcony": "130",
+    "price": "4,090,000",
+    "address": "📍 שכונת מורשת המבוקשת | שמעון פרס",
+    "subtitle": "תוסיפי תיאור קצר של הבניין",
+    "description": "תוסיפי תיאור חם של הדירה",
+    "features": [
+      "תכונה 1",
+      "תכונה 2",
+      "תכונה 3",
+      "תכונה 4",
+      "תכונה 5"
+    ],
+    "location": "תוסיפי קרבה ומיקום",
+    "highlights": [
+      "עדות 1",
+      "עדות 2"
+    ],
+    "images": [
+      "https://res.cloudinary.com/djk42jm3p/image/upload/13.1.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/13.2.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/13.3.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/13.4.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/13.5.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/13.6.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/13.7.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/13.8.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/13.9.jpg"
     ]
   }
 ]

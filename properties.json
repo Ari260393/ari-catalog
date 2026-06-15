@@ -173,50 +173,6 @@
       "https://res.cloudinary.com/djk42jm3p/image/upload/8.5.jpg",
       "https://res.cloudinary.com/djk42jm3p/image/upload/8.6.jpg"
       ]
-  },
-  {
-    "title": "דירת 3 חדרים",
-    "rooms": "3",
-    "sqm": "83",
-    "outdoor_type": "מרפסת",
-    "balcony": "14",
-    "price": "2,550,000",
-    "images": ["https://res.cloudinary.com/djk42jm3p/image/upload/static/hero"]
-  },
-  {
-    "title": "דירת 4 חדרים",
-    "rooms": "4",
-    "sqm": "105",
-    "outdoor_type": "מרפסת",
-    "balcony": "12",
-    "price": "2,850,000",
-    "images": ["https://res.cloudinary.com/djk42jm3p/image/upload/static/hero"]
-  },
-  {
-    "title": "דירת 5 חדרים",
-    "rooms": "5",
-    "sqm": "118",
-    "outdoor_type": "מרפסת",
-    "balcony": "20",
-    "price": "3,100,000",
-    "images": ["https://res.cloudinary.com/djk42jm3p/image/upload/static/hero"]
-  },
-  {
-    "title": "מיני פנטהאוז",
-    "rooms": "5",
-    "sqm": "140",
-    "outdoor_type": "מרפסת",
-    "balcony": "35",
-    "price": "3,750,000",
-    "images": ["https://res.cloudinary.com/djk42jm3p/image/upload/static/hero"]
-  },
-  {
-    "title": "דירת גן מיוחדת",
-    "rooms": "4",
-    "sqm": "115",
-    "outdoor_type": "חצר",
-    "balcony": "75",
-    "price": "3,200,000",
-    "images": ["https://res.cloudinary.com/djk42jm3p/image/upload/static/hero"]
   }
+
 ]

@@ -25,7 +25,14 @@
     "outdoor_type": "מרפסת",
     "balcony": "18",
     "price": "3,250,000",
-    "images": ["https://res.cloudinary.com/djk42jm3p/image/upload/static/hero", "https://res.cloudinary.com/djk42jm3p/image/upload/static/hero"]
+    "images": [
+      "https://res.cloudinary.com/djk42jm3p/image/upload/v1781520695/2.1.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/v1781520695/2.2.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/v1781520695/2.3.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/v1781520695/2.4.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/v1781520695/2.5.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/v1781520695/2.6.jpg"
+      ]
   },
   {
     "title": "דירת גן",

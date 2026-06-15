@@ -41,7 +41,15 @@
     "outdoor_type": "חצר",
     "balcony": "70",
     "price": "3,490,000",
-    "images": ["https://res.cloudinary.com/djk42jm3p/image/upload/static/hero"]
+    "images": [
+      "https://res.cloudinary.com/djk42jm3p/image/upload/3.1.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/3.2.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/3.3.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/3.4.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/3.5.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/3.6.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/3.7.jpg"
+    ]
   },
   {
     "title": "דירת 4 חדרים",

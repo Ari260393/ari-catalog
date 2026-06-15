@@ -6,6 +6,29 @@
     "outdoor_type": "חצר",
     "balcony": "180",
     "price": "5,200,000",
+    "address": "📍 שכונת מורשת המבוקשת | רחוב לוי אשכול",
+    "subtitle": "בניין בוטיק איכותי עם 7 דיירים בלבד",
+    "description": "דירת גן 5 חדרים ענקית ומשודרגת ברמה גבוהה, עם גינה נדירה ונוף פתוח שנותן תחושה של בית פרטי 🌿",
+    "features": [
+      "כ-128 מ״ר בנוי",
+      "גינת ענק כ-180 מ״ר מושקעת בטירוף עם דשא סינטטי יוקרתי",
+      "סלון רחב ומלא אור טבעי",
+      "מטבח גדול ומשודרג עם המון שטח עבודה",
+      "פינת אוכל מוגדרת ומרווחת",
+      "יחידת הורים מפנקת עם מקלחת ושירותים",
+      "3 שירותים | 2 חדרי רחצה",
+      "חדרים גדולים ומוארים",
+      "ממ״ד מרווח",
+      "2 חניות תת-קרקעיות",
+      "מחסן ענק נוסף בקומת מינוס 1",
+      "כיווני אוויר מעולים – דרום | מזרח | מערב"
+    ],
+    "location": "מרחק הליכה מגנים, בתי ספר, מרכז מסחרי ויציאה מהירה לכביש 431",
+    "highlights": [
+      "נכס ברמה גבוהה במיוחד",
+      "שמור, מושקע ומוכן לכניסה",
+      "מחיר אטרקטיבי ביחס לשוק"
+    ],
     "images": [
       "https://res.cloudinary.com/djk42jm3p/image/upload/1.jpg",
       "https://res.cloudinary.com/djk42jm3p/image/upload/2.jpg",
@@ -25,6 +48,21 @@
     "outdoor_type": "מרפסת",
     "balcony": "18",
     "price": "3,250,000",
+    "address": "תוסיפי כתובת",
+    "subtitle": "תוסיפי תיאור קצר של הבניין",
+    "description": "תוסיפי תיאור חם של הדירה",
+    "features": [
+      "תכונה 1",
+      "תכונה 2",
+      "תכונה 3",
+      "תכונה 4",
+      "תכונה 5"
+    ],
+    "location": "תוסיפי קרבה ומיקום",
+    "highlights": [
+      "עדות 1",
+      "עדות 2"
+    ],
     "images": [
       "https://res.cloudinary.com/djk42jm3p/image/upload/v1781520695/2.1.jpg",
       "https://res.cloudinary.com/djk42jm3p/image/upload/v1781520695/2.2.jpg",
@@ -32,7 +70,7 @@
       "https://res.cloudinary.com/djk42jm3p/image/upload/v1781520695/2.4.jpg",
       "https://res.cloudinary.com/djk42jm3p/image/upload/v1781520695/2.5.jpg",
       "https://res.cloudinary.com/djk42jm3p/image/upload/v1781520695/2.6.jpg"
-      ]
+    ]
   },
   {
     "title": "דירת גן",
@@ -41,6 +79,21 @@
     "outdoor_type": "חצר",
     "balcony": "70",
     "price": "3,490,000",
+    "address": "תוסיפי כתובת",
+    "subtitle": "תוסיפי תיאור קצר של הבניין",
+    "description": "תוסיפי תיאור חם של הדירה",
+    "features": [
+      "תכונה 1",
+      "תכונה 2",
+      "תכונה 3",
+      "תכונה 4",
+      "תכונה 5"
+    ],
+    "location": "תוסיפי קרבה ומיקום",
+    "highlights": [
+      "עדות 1",
+      "עדות 2"
+    ],
     "images": [
       "https://res.cloudinary.com/djk42jm3p/image/upload/3.1.jpg",
       "https://res.cloudinary.com/djk42jm3p/image/upload/3.2.jpg",
@@ -58,6 +111,21 @@
     "outdoor_type": "מרפסת",
     "balcony": "16",
     "price": "2,650,000",
+    "address": "תוסיפי כתובת",
+    "subtitle": "תוסיפי תיאור קצר של הבניין",
+    "description": "תוסיפי תיאור חם של הדירה",
+    "features": [
+      "תכונה 1",
+      "תכונה 2",
+      "תכונה 3",
+      "תכונה 4",
+      "תכונה 5"
+    ],
+    "location": "תוסיפי קרבה ומיקום",
+    "highlights": [
+      "עדות 1",
+      "עדות 2"
+    ],
     "images": [    
       "https://res.cloudinary.com/djk42jm3p/image/upload/4.1.jpg",
       "https://res.cloudinary.com/djk42jm3p/image/upload/4.2.jpg",
@@ -65,7 +133,8 @@
       "https://res.cloudinary.com/djk42jm3p/image/upload/4.4.jpg",
       "https://res.cloudinary.com/djk42jm3p/image/upload/4.5.jpg",
       "https://res.cloudinary.com/djk42jm3p/image/upload/4.6.jpg",
-      "https://res.cloudinary.com/djk42jm3p/image/upload/4.7.jpg"]
+      "https://res.cloudinary.com/djk42jm3p/image/upload/4.7.jpg"
+    ]
   },
   {
     "title": "דירת 4 חדרים",
@@ -74,6 +143,21 @@
     "outdoor_type": "מרפסת",
     "balcony": "14",
     "price": "2,490,000",
+    "address": "תוסיפי כתובת",
+    "subtitle": "תוסיפי תיאור קצר של הבניין",
+    "description": "תוסיפי תיאור חם של הדירה",
+    "features": [
+      "תכונה 1",
+      "תכונה 2",
+      "תכונה 3",
+      "תכונה 4",
+      "תכונה 5"
+    ],
+    "location": "תוסיפי קרבה ומיקום",
+    "highlights": [
+      "עדות 1",
+      "עדות 2"
+    ],
     "images": [     
       "https://res.cloudinary.com/djk42jm3p/image/upload/5.1.jpg",
       "https://res.cloudinary.com/djk42jm3p/image/upload/5.2.jpg",
@@ -83,7 +167,7 @@
       "https://res.cloudinary.com/djk42jm3p/image/upload/5.6.jpg",
       "https://res.cloudinary.com/djk42jm3p/image/upload/5.7.jpg",
       "https://res.cloudinary.com/djk42jm3p/image/upload/5.8.jpg"
-      ]
+    ]
   },
   {
     "title": "דופלקס גג",
@@ -92,6 +176,21 @@
     "outdoor_type": "גג",
     "balcony": "60",
     "price": "4,200,000",
+    "address": "תוסיפי כתובת",
+    "subtitle": "תוסיפי תיאור קצר של הבניין",
+    "description": "תוסיפי תיאור חם של הדירה",
+    "features": [
+      "תכונה 1",
+      "תכונה 2",
+      "תכונה 3",
+      "תכונה 4",
+      "תכונה 5"
+    ],
+    "location": "תוסיפי קרבה ומיקום",
+    "highlights": [
+      "עדות 1",
+      "עדות 2"
+    ],
     "images": [
       "https://res.cloudinary.com/djk42jm3p/image/upload/6.1.jpg",
       "https://res.cloudinary.com/djk42jm3p/image/upload/6.2.jpg",
@@ -102,7 +201,7 @@
       "https://res.cloudinary.com/djk42jm3p/image/upload/6.7.jpg",
       "https://res.cloudinary.com/djk42jm3p/image/upload/6.8.jpg",
       "https://res.cloudinary.com/djk42jm3p/image/upload/6.9.jpg"
-      ]
+    ]
   },
   {
     "title": "דירת 5 חדרים",
@@ -111,6 +210,21 @@
     "outdoor_type": "מרפסת",
     "balcony": "20",
     "price": "2,990,000",
+    "address": "תוסיפי כתובת",
+    "subtitle": "תוסיפי תיאור קצר של הבניין",
+    "description": "תוסיפי תיאור חם של הדירה",
+    "features": [
+      "תכונה 1",
+      "תכונה 2",
+      "תכונה 3",
+      "תכונה 4",
+      "תכונה 5"
+    ],
+    "location": "תוסיפי קרבה ומיקום",
+    "highlights": [
+      "עדות 1",
+      "עדות 2"
+    ],
     "images": [
       "https://res.cloudinary.com/djk42jm3p/image/upload/7.1.jpg",
       "https://res.cloudinary.com/djk42jm3p/image/upload/7.2.jpg",
@@ -120,7 +234,7 @@
       "https://res.cloudinary.com/djk42jm3p/image/upload/7.6.jpg",
       "https://res.cloudinary.com/djk42jm3p/image/upload/7.7.jpg",
       "https://res.cloudinary.com/djk42jm3p/image/upload/7.8.jpg"
-      ]
+    ]
   },
   {
     "title": "דירת גן",
@@ -129,6 +243,21 @@
     "outdoor_type": "חצר",
     "balcony": "80",
     "price": "3,390,000",
+    "address": "תוסיפי כתובת",
+    "subtitle": "תוסיפי תיאור קצר של הבניין",
+    "description": "תוסיפי תיאור חם של הדירה",
+    "features": [
+      "תכונה 1",
+      "תכונה 2",
+      "תכונה 3",
+      "תכונה 4",
+      "תכונה 5"
+    ],
+    "location": "תוסיפי קרבה ומיקום",
+    "highlights": [
+      "עדות 1",
+      "עדות 2"
+    ],
     "images": [
       "https://res.cloudinary.com/djk42jm3p/image/upload/8.1.jpg",
       "https://res.cloudinary.com/djk42jm3p/image/upload/8.2.jpg",
@@ -136,8 +265,7 @@
       "https://res.cloudinary.com/djk42jm3p/image/upload/8.4.jpg",
       "https://res.cloudinary.com/djk42jm3p/image/upload/8.5.jpg",
       "https://res.cloudinary.com/djk42jm3p/image/upload/8.6.jpg"
-    
-       ]
+    ]
   },
   {
     "title": "דירת 4 חדרים",
@@ -146,6 +274,21 @@
     "outdoor_type": "מרפסת",
     "balcony": "15",
     "price": "2,390,000",
+    "address": "תוסיפי כתובת",
+    "subtitle": "תוסיפי תיאור קצר של הבניין",
+    "description": "תוסיפי תיאור חם של הדירה",
+    "features": [
+      "תכונה 1",
+      "תכונה 2",
+      "תכונה 3",
+      "תכונה 4",
+      "תכונה 5"
+    ],
+    "location": "תוסיפי קרבה ומיקום",
+    "highlights": [
+      "עדות 1",
+      "עדות 2"
+    ],
     "images": [
       "https://res.cloudinary.com/djk42jm3p/image/upload/9.1.jpg",
       "https://res.cloudinary.com/djk42jm3p/image/upload/9.2.jpg",
@@ -156,7 +299,7 @@
       "https://res.cloudinary.com/djk42jm3p/image/upload/9.7.jpg",
       "https://res.cloudinary.com/djk42jm3p/image/upload/9.8.jpg",
       "https://res.cloudinary.com/djk42jm3p/image/upload/9.9.jpg"
-      ]
+    ]
   },
   {
     "title": "פנטהאוז",
@@ -165,6 +308,21 @@
     "outdoor_type": "מרפסת",
     "balcony": "100",
     "price": "5,300,000",
+    "address": "תוסיפי כתובת",
+    "subtitle": "תוסיפי תיאור קצר של הבניין",
+    "description": "תוסיפי תיאור חם של הדירה",
+    "features": [
+      "תכונה 1",
+      "תכונה 2",
+      "תכונה 3",
+      "תכונה 4",
+      "תכונה 5"
+    ],
+    "location": "תוסיפי קרבה ומיקום",
+    "highlights": [
+      "עדות 1",
+      "עדות 2"
+    ],
     "images": [
       "https://res.cloudinary.com/djk42jm3p/image/upload/8.1.jpg",
       "https://res.cloudinary.com/djk42jm3p/image/upload/8.2.jpg",
@@ -172,7 +330,6 @@
       "https://res.cloudinary.com/djk42jm3p/image/upload/8.4.jpg",
       "https://res.cloudinary.com/djk42jm3p/image/upload/8.5.jpg",
       "https://res.cloudinary.com/djk42jm3p/image/upload/8.6.jpg"
-      ]
+    ]
   }
-
 ]

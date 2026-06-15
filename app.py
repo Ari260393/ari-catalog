@@ -55,7 +55,10 @@ def home():
                <h3>{p['title']}</h3>
                <p>{p['rooms']} חדרים | {p['sqm']} מ״ר | {p.get('outdoor_type','מרפסת')} {p['balcony']} מ״ר</p>
                <div class="price">₪ {p['price']}</div>
-               <a href="https://wa.me/972505959053" target="_blank">לפרטים בווצאפ</a>
+               <div class="card-buttons">
+                   <a href="/property/{idx}" class="details-btn">פרטי הנכס</a>
+                   <a href="https://wa.me/972505959053" target="_blank" class="whatsapp-btn">לפרטים בווצאפ</a>
+               </div>
            </div>
        </div>
        """
@@ -298,6 +301,7 @@ h1 span {{
    font-size: 12px;
    color: #555;
    line-height: 1.5;
+   margin-bottom: 8px;
 }}
 
 .price {{
@@ -307,21 +311,38 @@ h1 span {{
    color: #b77d17;
 }}
 
-.card a {{
-   display: block;
+.card-buttons {{
+   display: flex;
+   gap: 8px;
+}}
+
+.details-btn, .whatsapp-btn {{
+   flex: 1;
    border: 1.5px solid #b89445;
    border-radius: 7px;
    padding: 7px;
    color: #073d2c;
    text-decoration: none;
    font-weight: 800;
-   font-size: 13px;
+   font-size: 12px;
    transition: background .15s, color .15s;
+   display: block;
 }}
 
-.card a:hover {{
+.details-btn:hover {{
+   background: #073d2c;
+   color: white;
+}}
+
+.whatsapp-btn {{
    background: #b89445;
    color: white;
+   border-color: #b89445;
+}}
+
+.whatsapp-btn:hover {{
+   background: #9a7a38;
+   border-color: #9a7a38;
 }}
 
 .lightbox {{
@@ -633,6 +654,449 @@ document.addEventListener('keydown', e => {{
 }});
 
 init();
+</script>
+</body>
+</html>
+"""
+
+@app.route("/property/<int:prop_id>")
+def property_details(prop_id):
+   properties = load_properties()
+   if prop_id < 0 or prop_id >= len(properties):
+       return "נכס לא נמצא", 404
+   
+   p = properties[prop_id]
+   images = p.get("images", ["hero"])
+   full_images = [img_url(img) for img in images]
+   images_json = json.dumps(full_images)
+   
+   slides = ""
+   dots = ""
+   for i, img in enumerate(full_images):
+       active = "active" if i == 0 else ""
+       slides += f'<div class="slide {active}"><img src="{img}" alt="תמונה {i+1}" data-images=\'{images_json}\' data-index="{i}"></div>'
+       dots += f'<button class="dot {active}" onclick="detailsGoTo({i})" aria-label="תמונה {i+1}"></button>'
+
+   arrows = ""
+   if len(images) > 1:
+       arrows = f"""
+       <button class="arrow arrow-r" onclick="detailsMove(-1)">&#8250;</button>
+       <button class="arrow arrow-l" onclick="detailsMove(1)">&#8249;</button>
+       """
+
+   features_html = ""
+   for feature in p.get("features", []):
+       features_html += f'<div class="feature-item">✨ {feature}</div>'
+
+   highlights_html = ""
+   for highlight in p.get("highlights", []):
+       highlights_html += f'<div class="highlight-item">💎 {highlight}</div>'
+
+   return f"""
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{p['title']} - ARI נדל״ן ויזמות</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;600;800;900&display=swap');
+
+* {{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}}
+
+body {{
+   font-family: 'Heebo', Arial, sans-serif;
+   background: #f7f3ea;
+   padding: 20px;
+}}
+
+.back-btn {{
+   display: inline-block;
+   margin-bottom: 20px;
+   padding: 10px 20px;
+   background: #073d2c;
+   color: white;
+   text-decoration: none;
+   border-radius: 7px;
+   font-weight: 800;
+   transition: background .15s;
+}}
+
+.back-btn:hover {{
+   background: #b89445;
+}}
+
+.container {{
+   max-width: 900px;
+   margin: 0 auto;
+   background: white;
+   border-radius: 12px;
+   overflow: hidden;
+   box-shadow: 0 8px 32px rgba(0,0,0,.15);
+}}
+
+.carousel {{
+   position: relative;
+   overflow: hidden;
+   max-height: 500px;
+}}
+
+.slide {{
+   display: none;
+   width: 100%;
+}}
+
+.slide.active {{ display: block; }}
+
+.slide img {{
+   width: 100%;
+   height: 500px;
+   display: block;
+   object-fit: cover;
+}}
+
+.arrow {{
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background: rgba(0,0,0,.5);
+   color: white;
+   border: none;
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   font-size: 24px;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   z-index: 2;
+   transition: background .15s;
+}}
+
+.arrow:hover {{ background: rgba(184,148,69,.9); }}
+.arrow-r {{ right: 15px; }}
+.arrow-l {{ left: 15px; }}
+
+.dots {{
+   position: absolute;
+   bottom: 15px;
+   left: 50%;
+   transform: translateX(-50%);
+   display: flex;
+   gap: 8px;
+   z-index: 2;
+}}
+
+.dot {{
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background: rgba(255,255,255,.5);
+   border: none;
+   cursor: pointer;
+   padding: 0;
+   transition: background .15s;
+}}
+
+.dot.active {{ background: #c9a24b; }}
+
+.details {{
+   padding: 40px;
+}}
+
+.title {{
+   font-size: 32px;
+   font-weight: 900;
+   color: #073d2c;
+   margin-bottom: 8px;
+}}
+
+.address {{
+   font-size: 18px;
+   color: #666;
+   margin-bottom: 4px;
+}}
+
+.subtitle {{
+   font-size: 16px;
+   color: #b89445;
+   font-weight: 800;
+   margin-bottom: 20px;
+}}
+
+.basic-info {{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+   gap: 15px;
+   padding: 20px;
+   background: #f7f3ea;
+   border-radius: 9px;
+   margin-bottom: 30px;
+}}
+
+.info-box {{
+   text-align: center;
+}}
+
+.info-label {{
+   font-size: 12px;
+   color: #888;
+   font-weight: 700;
+   text-transform: uppercase;
+   margin-bottom: 5px;
+}}
+
+.info-value {{
+   font-size: 22px;
+   font-weight: 900;
+   color: #073d2c;
+}}
+
+.description {{
+   font-size: 16px;
+   line-height: 1.8;
+   color: #333;
+   margin-bottom: 30px;
+   padding: 20px;
+   background: rgba(184,148,69,.1);
+   border-right: 4px solid #b89445;
+   border-radius: 7px;
+}}
+
+.section-title {{
+   font-size: 20px;
+   font-weight: 900;
+   color: #073d2c;
+   margin-bottom: 15px;
+   padding-bottom: 10px;
+   border-bottom: 2px solid #b89445;
+}}
+
+.features-list {{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 12px;
+   margin-bottom: 30px;
+}}
+
+.feature-item {{
+   padding: 12px;
+   background: #f7f3ea;
+   border-radius: 7px;
+   font-size: 14px;
+   color: #333;
+}}
+
+.highlights-list {{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   gap: 12px;
+   margin-bottom: 30px;
+}}
+
+.highlight-item {{
+   padding: 12px;
+   background: rgba(184,148,69,.15);
+   border-radius: 7px;
+   font-size: 14px;
+   color: #333;
+   font-weight: 600;
+}}
+
+.location {{
+   padding: 20px;
+   background: #f7f3ea;
+   border-radius: 9px;
+   font-size: 15px;
+   line-height: 1.7;
+   color: #333;
+   margin-bottom: 30px;
+}}
+
+.action-buttons {{
+   display: flex;
+   gap: 15px;
+   margin-top: 30px;
+}}
+
+.whatsapp-link {{
+   flex: 1;
+   padding: 15px;
+   background: #25d366;
+   color: white;
+   text-decoration: none;
+   border-radius: 9px;
+   text-align: center;
+   font-weight: 900;
+   font-size: 16px;
+   transition: background .15s;
+}}
+
+.whatsapp-link:hover {{
+   background: #1da851;
+}}
+
+.lightbox {{
+   display: none;
+   position: fixed;
+   inset: 0;
+   background: rgba(0,0,0,.92);
+   z-index: 1000;
+   align-items: center;
+   justify-content: center;
+}}
+
+.lightbox.open {{
+   display: flex;
+}}
+
+.lightbox img {{
+   max-width: 90vw;
+   max-height: 88vh;
+   object-fit: contain;
+   border-radius: 6px;
+   user-select: none;
+}}
+
+.lb-close {{
+   position: fixed;
+   top: 18px;
+   right: 22px;
+   color: white;
+   font-size: 36px;
+   cursor: pointer;
+   line-height: 1;
+   z-index: 1001;
+   background: none;
+   border: none;
+   opacity: 0.85;
+   transition: opacity .15s;
+}}
+
+.lb-close:hover {{ opacity: 1; }}
+
+@media (max-width: 600px) {{
+   .details {{ padding: 20px; }}
+   .title {{ font-size: 24px; }}
+   .basic-info {{ grid-template-columns: repeat(2, 1fr); }}
+   .action-buttons {{ flex-direction: column; }}
+   .slide img {{ height: 300px; }}
+}}
+</style>
+</head>
+<body>
+
+<a href="/" class="back-btn">← חזרה לדירות</a>
+
+<div class="container">
+   <div class="carousel" id="carousel">
+       {slides}
+       {arrows}
+       <div class="dots">{dots}</div>
+   </div>
+
+   <div class="details">
+       <div class="title">{p['title']}</div>
+       <div class="address">{p.get('address', '')}</div>
+       <div class="subtitle">{p.get('subtitle', '')}</div>
+
+       <div class="basic-info">
+           <div class="info-box">
+               <div class="info-label">חדרים</div>
+               <div class="info-value">{p['rooms']}</div>
+           </div>
+           <div class="info-box">
+               <div class="info-label">שטח בנוי</div>
+               <div class="info-value">{p['sqm']} מ״ר</div>
+           </div>
+           <div class="info-box">
+               <div class="info-label">{p.get('outdoor_type', 'מרפסת')}</div>
+               <div class="info-value">{p['balcony']} מ״ר</div>
+           </div>
+           <div class="info-box">
+               <div class="info-label">מחיר</div>
+               <div class="info-value" style="color: #b77d17;">₪ {p['price']}</div>
+           </div>
+       </div>
+
+       <div class="description">{p.get('description', '')}</div>
+
+       <div class="section-title">תכונות עיקריות</div>
+       <div class="features-list">{features_html}</div>
+
+       <div class="section-title">מה מיוחד בנכס</div>
+       <div class="highlights-list">{highlights_html}</div>
+
+       <div class="section-title">מיקום</div>
+       <div class="location">{p.get('location', '')}</div>
+
+       <div class="action-buttons">
+           <a href="https://wa.me/972505959053" target="_blank" class="whatsapp-link">📲 צור קשר בווצאפ</a>
+       </div>
+   </div>
+</div>
+
+<div class="lightbox" id="lightbox">
+   <button class="lb-close" id="lb-close">✕</button>
+   <img id="lb-img" src="" alt="">
+</div>
+
+<script>
+let detailsCarousel = 0;
+let detailsImages = [];
+
+function initDetails() {{
+   const slides = document.querySelectorAll('.slide');
+   detailsCarousel = 0;
+
+   document.querySelectorAll('.slide img').forEach(img => {{
+       img.addEventListener('click', function(e) {{
+           e.stopPropagation();
+           const src = this.src;
+           openLightbox(src);
+       }});
+   }});
+
+   document.getElementById('lb-close').addEventListener('click', closeLightbox);
+   document.getElementById('lightbox').addEventListener('click', function(e) {{
+       if (e.target === this) closeLightbox();
+   }});
+}}
+
+function detailsGoTo(idx) {{
+   const slides = document.querySelectorAll('.slide');
+   const dots = document.querySelectorAll('.dot');
+   slides[detailsCarousel].classList.remove('active');
+   dots[detailsCarousel].classList.remove('active');
+   detailsCarousel = idx;
+   slides[idx].classList.add('active');
+   dots[idx].classList.add('active');
+}}
+
+function detailsMove(dir) {{
+   const slides = document.querySelectorAll('.slide');
+   const total = slides.length;
+   let next = (detailsCarousel - dir + total) % total;
+   detailsGoTo(next);
+}}
+
+function openLightbox(src) {{
+   document.getElementById('lb-img').src = src;
+   document.getElementById('lightbox').classList.add('open');
+   document.body.style.overflow = 'hidden';
+}}
+
+function closeLightbox() {{
+   document.getElementById('lightbox').classList.remove('open');
+   document.body.style.overflow = '';
+}}
+
+initDetails();
 </script>
 </body>
 </html>

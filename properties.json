@@ -36,7 +36,7 @@
   },
   {
     "title": "דירת גן",
-    "rooms": "5",
+    "rooms": "4",
     "sqm": "130",
     "outdoor_type": "חצר",
     "balcony": "70",
@@ -58,7 +58,14 @@
     "outdoor_type": "מרפסת",
     "balcony": "16",
     "price": "2,650,000",
-    "images": ["https://res.cloudinary.com/djk42jm3p/image/upload/static/hero"]
+    "images": [    
+      "https://res.cloudinary.com/djk42jm3p/image/upload/4.1.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/4.2.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/4.3.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/4.4.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/4.5.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/4.6.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/4.7.jpg"]
   },
   {
     "title": "דירת 4 חדרים",
@@ -67,7 +74,16 @@
     "outdoor_type": "מרפסת",
     "balcony": "14",
     "price": "2,490,000",
-    "images": ["https://res.cloudinary.com/djk42jm3p/image/upload/static/hero"]
+    "images": [     
+      "https://res.cloudinary.com/djk42jm3p/image/upload/5.1.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/5.2.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/5.3.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/5.4.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/5.5.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/5.6.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/5.7.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/5.8.jpg"
+      ]
   },
   {
     "title": "דופלקס גג",
@@ -76,7 +92,17 @@
     "outdoor_type": "גג",
     "balcony": "60",
     "price": "4,200,000",
-    "images": ["https://res.cloudinary.com/djk42jm3p/image/upload/static/hero"]
+    "images": [
+      "https://res.cloudinary.com/djk42jm3p/image/upload/6.1.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/6.2.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/6.3.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/6.4.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/6.5.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/6.6.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/6.7.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/6.8.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/6.9.jpg"
+      ]
   },
   {
     "title": "דירת 5 חדרים",
@@ -85,7 +111,16 @@
     "outdoor_type": "מרפסת",
     "balcony": "20",
     "price": "2,990,000",
-    "images": ["https://res.cloudinary.com/djk42jm3p/image/upload/static/hero"]
+    "images": [
+      "https://res.cloudinary.com/djk42jm3p/image/upload/7.1.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/7.2.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/7.3.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/7.4.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/7.5.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/7.6.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/7.7.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/7.8.jpg"
+      ]
   },
   {
     "title": "דירת גן",
@@ -94,7 +129,15 @@
     "outdoor_type": "חצר",
     "balcony": "80",
     "price": "3,390,000",
-    "images": ["https://res.cloudinary.com/djk42jm3p/image/upload/static/hero"]
+    "images": [
+      "https://res.cloudinary.com/djk42jm3p/image/upload/8.1.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/8.2.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/8.3.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/8.4.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/8.5.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/8.6.jpg"
+    
+       ]
   },
   {
     "title": "דירת 4 חדרים",
@@ -103,7 +146,17 @@
     "outdoor_type": "מרפסת",
     "balcony": "15",
     "price": "2,390,000",
-    "images": ["https://res.cloudinary.com/djk42jm3p/image/upload/static/hero"]
+    "images": [
+      "https://res.cloudinary.com/djk42jm3p/image/upload/9.1.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/9.2.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/9.3.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/9.4.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/9.5.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/9.6.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/9.7.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/9.8.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/9.9.jpg"
+      ]
   },
   {
     "title": "פנטהאוז",
@@ -112,7 +165,14 @@
     "outdoor_type": "מרפסת",
     "balcony": "100",
     "price": "5,300,000",
-    "images": ["https://res.cloudinary.com/djk42jm3p/image/upload/static/hero"]
+    "images": [
+      "https://res.cloudinary.com/djk42jm3p/image/upload/8.1.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/8.2.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/8.3.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/8.4.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/8.5.jpg",
+      "https://res.cloudinary.com/djk42jm3p/image/upload/8.6.jpg"
+      ]
   },
   {
     "title": "דירת 3 חדרים",

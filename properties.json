@@ -2,6 +2,7 @@
   {
     "title": "דירת גן 5 חדרים",
     "rooms": "5",
+    "neighborhood": "מורשת",
     "sqm": "125",
     "outdoor_type": "חצר",
     "balcony": "180",
@@ -44,6 +45,7 @@
   {
     "title": "דירת 4 חדרים",
     "rooms": "4",
+    "neighborhood": "מורשת",
     "sqm": "110",
     "outdoor_type": "מרפסת",
     "balcony": "13",
@@ -75,6 +77,7 @@
   {
     "title": "דירת 3 חדרים",
     "rooms": "3",
+    "neighborhood": "מורשת",
     "sqm": "84",
     "outdoor_type": "מרפסת",
     "balcony": "36",
@@ -107,6 +110,7 @@
   {
     "title": "דירת 5 חדרים",
     "rooms": "5",
+    "neighborhood": "מורשת",
     "sqm": "128",
     "outdoor_type": "מרפסת",
     "balcony": "14",
@@ -139,6 +143,7 @@
   {
     "title": "דירת 4 חדרים",
     "rooms": "4",
+    "neighborhood": "מורשת",
     "sqm": "109",
     "outdoor_type": "מרפסת",
     "balcony": "21",
@@ -172,6 +177,7 @@
   {
     "title": "פנטהאוז 6 חדרים",
     "rooms": "6",
+    "neighborhood": "מורשת",
     "sqm": "168",
     "outdoor_type": "מרפסת היקפית",
     "balcony": "90",
@@ -206,6 +212,7 @@
   {
     "title": "דירת 3 חדרים",
     "rooms": "3",
+    "neighborhood": "מורשת",
     "sqm": "84",
     "outdoor_type": "מרפסת",
     "balcony": "12",
@@ -239,6 +246,7 @@
   {
     "title": "דירת 3 חדרים",
     "rooms": "3",
+    "neighborhood": "מורשת",
     "sqm": "84",
     "outdoor_type": "מרפסת",
     "balcony": "14",
@@ -270,6 +278,7 @@
   {
     "title": "דירת 6 חדרים",
     "rooms": "6",
+    "neighborhood": "מורשת",
     "sqm": "137",
     "outdoor_type": "מרפסת",
     "balcony": "13",
@@ -304,6 +313,7 @@
   {
     "title": "דירת 5 חדרים",
     "rooms": "5",
+    "neighborhood": "מורשת",
     "sqm": "128",
     "outdoor_type": "מרפסת",
     "balcony": "12",
@@ -335,6 +345,7 @@
   {
     "title": "דירת 4.5 חדרים",
     "rooms": "4",
+    "neighborhood": "מורשת",
     "sqm": "110",
     "outdoor_type": "מרפסת",
     "balcony": "14",
@@ -369,6 +380,7 @@
   {
     "title": "דירת 4 חדרים",
     "rooms": "4",
+    "neighborhood": "מורשת",
     "sqm": "110",
     "outdoor_type": "מרפסת",
     "balcony": "20",
@@ -402,6 +414,7 @@
   {
     "title": "דירת גן 6 חדרים",
     "rooms": "6",
+    "neighborhood": "מורשת",
     "sqm": "138",
     "outdoor_type": "חצר",
     "balcony": "130",

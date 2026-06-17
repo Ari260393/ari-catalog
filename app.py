@@ -44,6 +44,9 @@ def home():
            <button class="arrow arrow-l" onclick="move({idx}, 1)">&#8249;</button>
            """
 
+       neighborhood = p.get("neighborhood", "")
+       neighborhood_html = f' | {neighborhood}' if neighborhood else ""
+
        cards += f"""
        <div class="card" data-rooms="{p['rooms']}">
            <div class="carousel" id="carousel-{idx}">
@@ -53,7 +56,7 @@ def home():
            </div>
            <div class="card-content">
                <h3>{p['title']}</h3>
-               <p>{p['rooms']} חדרים | {p['sqm']} מ״ר | {p.get('outdoor_type','מרפסת')} {p['balcony']} מ״ר</p>
+               <p>{p['rooms']} חדרים{neighborhood_html} | {p['sqm']} מ״ר | {p.get('outdoor_type','מרפסת')} {p['balcony']} מ״ר</p>
                <div class="price">₪ {p['price']}</div>
                <div class="card-buttons">
                    <a href="/property/{idx}" class="details-btn">פרטי הנכס</a>
@@ -692,6 +695,16 @@ def property_details(prop_id):
    for highlight in p.get("highlights", []):
        highlights_html += f'<div class="highlight-item">💎 {highlight}</div>'
 
+   neighborhood = p.get("neighborhood", "")
+   neighborhood_box = ""
+   if neighborhood:
+       neighborhood_box = f"""
+           <div class="info-box">
+               <div class="info-label">שכונה</div>
+               <div class="info-value">{neighborhood}</div>
+           </div>
+       """
+
    return f"""
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
@@ -1010,6 +1023,7 @@ body {{
                <div class="info-label">חדרים</div>
                <div class="info-value">{p['rooms']}</div>
            </div>
+           {neighborhood_box}
            <div class="info-box">
                <div class="info-label">שטח בנוי</div>
                <div class="info-value">{p['sqm']} מ״ר</div>
